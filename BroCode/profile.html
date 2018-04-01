@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elegant Profile Tabs Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js --> 
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true,   // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="main">
+		<h1>WELCOME TO OUR WEBSITE</h1>
+		<div class="w3_main_grids">
+			<div class="w3layouts_profile_grid1">
+				<div class="w3l_profile_grid1_padd">
+					<div class="w3ls_menu_grids">
+						<div class="w3ls_menu_grid">
+							<span class="menu-icon">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</span>
+							<!-- menu -->
+								<ul class="w3_agile_nav1">
+									<li><a href="#">Log In</a></li>
+									<li><a href="#">Sign Up</a></li>
+									<li><a href="#">Settings</a></li>
+								</ul> 	
+								<!-- script-for-menu -->
+								 <script>
+								   $( "span.menu-icon" ).click(function() {
+									 $( "ul.w3_agile_nav1" ).slideToggle( 300, function() {
+									 // Animation complete.
+									  });
+									 });
+								</script>
+								<!-- /script-for-menu -->
+							<!-- //menu -->
+						</div>
+						<div class="w3ls_menu_grid">
+							<h2>Full Name</h2>
+						</div>
+						<div class="w3ls_menu_grid">
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="agileinfo_profile_grid2">
+				<div class="w3_agile_profile_grid2_left">
+					<img src="images/1.png" alt=" " class="img-responsive" />
+				</div>
+				<div class="agile_profile_grid2_left">
+					
+					<ul>
+						<li class="agileits_w3layouts_list"><a href="#">Add Friend</a></li>
+						<li class="w3_agileits_list"><a href="#">Unfriend</a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				<p>Username - Full name</p>
+			</div>
+			<div class="wthree_tabs">
+				<div id="horizontalTab">
+					<ul class="resp-tabs-list">
+						<li>Friends</li>
+						<li>Posts</li>
+						<li>Photos</li>
+						<li>Contact Me</li>
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="agileinfo_tab1">
+							<ul>
+								<li><i class="fa fa-gratipay" aria-hidden="true"></i><span>Mozaic Ali</span> mattis mollis nunc vel.</li>
+								<li><i class="fa fa-comments-o agileits_comment" aria-hidden="true"></i><span>Richard James</span> mattis mollis nunc vel.
+									<img src="images/2.jpg" alt=" " class="img-responsive w3ls_men" />
+								</li>
+								<li><i class="fa fa-gratipay" aria-hidden="true"></i><span>Michael Paul</span> mattis mollis nunc vel.
+									<div class="agileinfo_tab1_img_grids">
+										<div class="agileinfo_tab1_img_grid">
+											<img src="images/2.png" alt=" " class="img-responsive" />
+										</div>
+										<div class="agileinfo_tab1_img_grid">
+											<img src="images/4.png" alt=" " class="img-responsive" />
+										</div>
+										<div class="agileinfo_tab1_img_grid">
+											<img src="images/3.png" alt=" " class="img-responsive" />
+										</div>
+										<div class="clear"> </div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="agileinfo_tab2">
+							<div class="wthree_tab_grid">
+								<p class="eget">turpis ultricies eget estibulum commodo justo non nibh tempor finibus</p>
+								<p class="eget1">Aliquam sodales dolor ac lorem vulputate, eu maximus velit semper. Sed erat lacus, ultrices in iaculis ac, laoreet quis felis</p>
+								<div class="wthree_tab_grid_sub">
+									<div class="wthree_tab_grid_sub_left">
+										<h5>321</h5>
+										<p>Tweets</p>
+									</div>
+									<div class="wthree_tab_grid_sub_left">
+										<h5>213</h5>
+										<p>Followers</p>
+									</div>
+									<div class="wthree_tab_grid_sub_left">
+										<h5>123</h5>
+										<p>Following</p>
+									</div>
+									<div class="clear"> </div>
+								</div>
+							</div>
+						</div>
+						<div class="agileinfo_tab3">
+							<div class="wthree_tab_grid">
+								<ol>
+									<li>mattis volutpat ante<span>Nulla eleifend nisi id quam interdum, id dictum urna viverra</span></li>
+									<li>dictum tincidunt sem sed<span>Nulla eleifend nisi id quam interdum, id dictum urna viverra</span></li>
+									<li>Praesent sem quam<span>Nulla eleifend nisi id quam interdum, id dictum urna viverra</span></li>
+									<li>amet dignissim felis<span>Nulla eleifend nisi id quam interdum, id dictum urna viverra</span></li>
+									<li>dictum urna viverra<span>Nulla eleifend nisi id quam interdum, id dictum urna viverra</span></li>
+								</ol>
+							</div>
+						</div>
+						<div class="agileinfo_tab3">
+							<div class="wthree_tab_grid">
+								<ul class="wthree_tab_grid_list">
+									<li><i class="fa fa-mobile" aria-hidden="true"></i></li>
+									<li>Mobile<span>+123 234 4342</span></li>
+								</ul>
+								<ul class="wthree_tab_grid_list">
+									<li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+									<li>Mail Me<span><a href="mailto:info@example.com">info@example.com</a></span></li>
+								</ul>
+								<ul class="wthree_tab_grid_list">
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+									<li>Address<span>123 Avenue, Dollar Street, France.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+</body>
+</html>
