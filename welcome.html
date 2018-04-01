@@ -5,89 +5,65 @@
 
 <link rel="stylesheet" href="style.css">
 
-<script type = "text/JavaScript">
-
-const signupButton = document.getElementById('signup-button'),
-    loginButton = document.getElementById('login-button'),
-    userForms = document.getElementById('user_options-forms')
-
-signupButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceRight')
-  userForms.classList.add('bounceLeft')
-}, false)
-
-loginButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceLeft')
-  userForms.classList.add('bounceRight')
-}, false)
-
-
-
-</script>
-
 </head>
 
 <body>
-<section class="user">
-  <div class="user_options-container">
-    <div class="user_options-text">
-      <div class="user_options-unregistered">
-        <h2 class="user_unregistered-title">Don't have an account?</h2>
-        <p class="user_unregistered-text">Create a new account easily within seconds.</p>
-        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
-      </div>
 
-      <div class="user_options-registered">
-        <h2 class="user_registered-title">Have an account?</h2>
-        <p class="user_registered-text">Login with required details.</p>
-        <button class="user_registered-login" id="login-button">Login</button>
-      </div>
-    </div>
-    
-    <div class="user_options-forms" id="user_options-forms">
-      <div class="user_forms-login">
-        <h2 class="forms_title">Login</h2>
-        <form class="forms_form" action="signUp.php" method="post">
-          <fieldset class="forms_fieldset">
-            <div class="forms_field">
-              <input type="text" name="username" value="" placeholder="Username" class="forms_field-input" required autofocus />
-            </div>
-            <div class="forms_field">
-              <input type="password" name="password" value="" placeholder="Password" class="forms_field-input" required />
-            </div>
-          </fieldset>
-          <div class="forms_buttons">
-            <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <input type="submit" name="Login" value="Log In" class="forms_buttons-action">
-          </div>
-        </form>
-      </div>
-
-      <div class="user_forms-signup">
-        <h2 class="forms_title">Sign Up</h2>
-        <form class="forms_form" action="signUp.php" method="post">
-          <fieldset class="forms_fieldset">
-            <div class="forms_field">
-              <input type="text" name="name" value="" placeholder="Full Name" class="forms_field-input" required />
-            </div>
-	    <div class="forms_field">
-              <input type="text" name="username" value="" placeholder="Username" class="forms_field-input" required />
-            </div>
-            <div class="forms_field">
-              <input type="email" name="email" value="" placeholder="Email" class="forms_field-input" required />
-            </div>
-            <div class="forms_field">
-              <input type="password" name="password" value="" placeholder="Password" class="forms_field-input" required />
-            </div>
-          </fieldset>
-          <div class="forms_buttons">
-            <input type="submit" name="Signup" value="Sign Up" class="forms_buttons-action">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+			<form class="forms_form" action="signUp.php" method="post">	
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="username" type="text" name="username" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" name="Login" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+			</form>
+			<div class="sign-up-htm">
+				<form class="forms_form" action="signUp.php" method="post">
+				<div class="group">
+					<label for="name" class="label">Full Name</label>
+					<input id="name" type="text" name="name" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" name="username" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" name="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="email" class="label">Email Address</label>
+					<input id="email" type="text" name="email" class="input">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 
